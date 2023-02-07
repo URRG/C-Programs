@@ -64,5 +64,25 @@ void createList(int n)
         temp = temp->next;    
     }
 }
+/*
+  Display entire list
+ */
+void traverseList()
+{
+    struct node *temp;
+
+    if(head == NULL)
+    {
+        printf("List is empty.");
+        return;
+    }
+    
+    temp = head;
+    while(temp != NULL)
+    {
+        printf("Data = %d\n", temp->data); 
+        temp = temp->next;                
+    }
+}
 
 

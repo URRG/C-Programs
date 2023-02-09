@@ -67,4 +67,34 @@ void printList(struct Node *head)
     } while(temp != head);
   }
 }
+
+int main()
+{
+  int list_size, i;
+   
+  struct Node *head = NULL;
+  struct Node *head1 = NULL;
+  struct Node *head2 = NULL; 
+ 
+  
+  push(&head, 12);
+  push(&head, 56);  
+  push(&head, 2);  
+  push(&head, 11);  
+ 
+  printf("Original Circular Linked List");
+  printList(head);     
+  
+  
+  splitList(head, &head1, &head2);
+  
+  printf("\nFirst Circular Linked List");
+  printList(head1); 
+ 
+  printf("\nSecond Circular Linked List");
+  printList(head2); 
+   
+  getchar();
+  return 0;
+}
  

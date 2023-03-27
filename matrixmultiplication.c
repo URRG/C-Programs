@@ -42,5 +42,21 @@ int main()
     {
         sum1=sum1 + sub1[i][j];
     }
+    for(i=0;i<r;++i)                            //sum(B-A)
+    for(j=0;j<c;++j)
+    {
+        sum2=sum2 + sub2[i][j];
+    }
     
+    if(sum1>sum2){
+        printf("Greater");
+    }
+    else{
+        printf("Less");
+    }
+    
+
+
+    return 0;
+}
     

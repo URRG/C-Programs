@@ -12,5 +12,15 @@ int main()
     scanf("%d",&initial);
     
     // logic for FCFS disk scheduling
+     for(i=0;i<n;i++)
+    {
+        TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
+        initial=RQ[i];
+    }
     
+    printf("Total head moment is %d",TotalHeadMoment);
+    return 0;
+    
+}
+
    

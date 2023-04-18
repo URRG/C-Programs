@@ -67,4 +67,34 @@ int main()
         printf("Enter the available no for resource(%d):",j+1);
         scanf("%d",&avail[j]);
     }
+    for(i=0;i<r;++i){
+    for(j=0;j<c;++j){
+    if(avail[j]>=need[i][j]){
+        count=count+1;
+    }
+    }
+    if (count==3){
+        seq[0]=i+1;
+        printf("p%d",seq[0]);
+    }
     
+}
+    for(j=0;j<c;++j) {  
+        x=seq[0];
+    avail[j]=avail[j]+need[x][j];
+    }
+    for(i=0;i<r;++i){
+    for(j=0;j<c;++j){
+    if(avail[j]>=need[i][j]){
+        count=count+1;
+    }
+    }
+    
+    if (count==3){
+        seq[1]=i+1;
+        printf("p%d",seq[1]);
+    
+    }
+}    
+}
+

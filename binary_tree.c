@@ -51,3 +51,21 @@ void preorder(struct node* root)
     }
 }
 
+void postorder(struct node* root)
+{
+    if(root!=NULL)
+    {
+        inorder(root->left); 
+        inorder(root->right);
+        printf("%d", root->data); 
+    }
+}
+void main(){
+    root=create();
+    printf("Inorder Traversal\n");
+    inorder(root);
+    printf("\nPreorder Traversal\n");
+    preorder(root);
+    printf("\nPostorder Traversal\n");
+    postorder(root);
+}

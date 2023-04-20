@@ -22,3 +22,21 @@ int main()
     }
     return 0;
 }
+int search(int arr[],int target,int n)
+{
+    int l=0;
+    int u=n-1;
+    while(l<=u){
+        int mid=l+(u-1)/2;
+        if(target<arr[mid]){
+            u=mid-1;
+        }
+        else if(target>arr[mid]){
+            l=mid+1;
+        }
+        else{
+            return mid;
+        }
+    }
+    return -1;
+}

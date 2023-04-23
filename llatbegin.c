@@ -112,4 +112,21 @@ void insertNodeAtBeginning(int data)
 /*
  * Display entire list
  */
+void displayList()
+{
+    struct node *temp;
 
+    if(head == NULL)
+    {
+        printf("List is empty.");
+    }
+    else
+    {
+        temp = head;
+        while(temp != NULL)
+        {
+            printf("Data = %d\n", temp->data); 
+            temp = temp->next;                 
+        }
+    }
+}

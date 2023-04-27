@@ -9,25 +9,4 @@ int dictionaryContains(string word)
            return true;
     return false;
 }
-bool wordBreak(string str)
-{
-    int size = str.size();
- 
-       if (size == 0)  return true;
-    for (int i=1; i<=size; i++)
-    {
-                if (dictionaryContains( str.substr(0, i) ) &&
-            wordBreak( str.substr(i, size-i) ))
-            return true;
-    }
- 
-    return false;
-}
-int main()
-{
-    string fullName;
-    getline (cin, fullName);
-    wordBreak(fullName)? cout <<"yes\n": cout << "no\n";
-    return 0;
-}
 

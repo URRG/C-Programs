@@ -18,23 +18,4 @@ int main()
         
     }
    
-     for(i=y;;++i)
-    for(j=x;;++j)
-    {
-        a[x][y]=a[i][j];
-    }
     
-    for(x=0;x<r;++i)
-    for(y=0;y<c;++j)
-    {
-        printf("%d  ",a[x][y]);
-        
-        if(y==c-1){
-            printf("\n\n");
-        }
-    }
-
-    return 0;
-}
-
-   

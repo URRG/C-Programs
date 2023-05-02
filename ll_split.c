@@ -85,5 +85,16 @@ int main()
   printf("Original Circular Linked List");
   printList(head);     
   
+  splitList(head, &head1, &head2);
   
+  printf("\nFirst Circular Linked List");
+  printList(head1); 
+ 
+  printf("\nSecond Circular Linked List");
+  printList(head2); 
+   
+  getchar();
+  return 0;
+}
+ 
   

@@ -28,14 +28,4 @@ for(i = 0; i < processno; i++)
 			temp[j] = 1;
 				break;
 		}
-printf("\nBlock no.\tsize\t\tprocess no.\t\tsize");
-for(i = 0; i < blockno; i++)
-	{
-    printf("\n%d\t\t%d\t\t", i+1, blocksize[i]);
-		if(temp[i] == 1)
-			printf("%d\t\t\t%d",allo[i]+1,processsize[allo[i]]);
-		else
-			printf("Not allocated");
-	}
-}
 
